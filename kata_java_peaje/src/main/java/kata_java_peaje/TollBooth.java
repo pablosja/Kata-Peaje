@@ -9,11 +9,20 @@ public class TollBooth {
     private double totalCollected;
     private List<Vehicle> vehicles;
 
+    // Constructor con nombre y ciudad
     public TollBooth(String name, String city) {
         this.name = name;
         this.city = city;
         this.totalCollected = 0.0;
         this.vehicles = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCity() {
+        return city;
     }
 
     public void registerVehicle(Vehicle vehicle) {
